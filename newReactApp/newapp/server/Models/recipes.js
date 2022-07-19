@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
 
 const recipeDataSchema = new Schema({
 
@@ -11,6 +12,11 @@ const recipeDataSchema = new Schema({
     searchDate: {
         type: Date,
         detault: Date.now
+    }
+},
+{
+    toJSON: {
+        getters: true
     }
 });
 
