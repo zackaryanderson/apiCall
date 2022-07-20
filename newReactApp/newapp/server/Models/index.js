@@ -1,3 +1,3 @@
-const recipeData = require('./recipes');
+const RecipeData = require('./recipes');
 
-module.exports = { recipeData };
+module.exports = { RecipeData };

@@ -4,8 +4,15 @@ const { gql } = require('apollo-server-express');
 //create our typeDefs
 const typeDefs = gql`
 
+    type RecipeData {
+        _id: ID
+        apiID: Int
+        title: String
+        createdAt: String
+    }
+
     type Query {
-        helloWorld: String
+        recipes(apiID: Int): [RecipeData]
     }
 
 `;
