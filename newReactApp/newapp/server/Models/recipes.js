@@ -21,7 +21,7 @@ const recipeDataSchema = new Schema({
 });
 
 //create recipe data model using schema
-const recipeData = model('Recipe Data', recipeDataSchema);
+const recipeData = mongoose.model('RecipeData', recipeDataSchema);
 
 //export recipe model
 module.exports = recipeData;
