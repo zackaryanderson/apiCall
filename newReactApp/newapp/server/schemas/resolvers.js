@@ -5,8 +5,8 @@ const resolvers = {
 
         recipes: async (parent, {apiID}) => {
 
-            const params = apiID ? { apiID } : {};
-            return RecipeData.find(params).sort({ createdAt: -1});
+            //const params = apiID ? { apiID } : {};
+            return RecipeData.find().sort({ createdAt: -1});
 
         },
         getSingleRecipe: async (parent, {_id}) => {
@@ -19,11 +19,7 @@ const resolvers = {
 
         addRecipe: async (parent, args) => {
 
-            const {apiID, title} = args;
-
-            const recipe = await RecipeData.create({apiID: apiID, title: title});
-
-            console.log(recipe);
+            const recipe = await RecipeData.create(args);
 
             return recipe;
 

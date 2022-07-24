@@ -6,19 +6,18 @@ const typeDefs = gql`
 
     type RecipeData {
         _id: ID
-        apiID: Int!
+        apiID: String!
         title: String!
         createdAt: String
     }
 
     type Query {
         recipes: [RecipeData]
-
         getSingleRecipe(_id: ID): RecipeData
     }
 
     type Mutation {
-        addRecipe(apiID: Int!, title: String!): RecipeData
+        addRecipe(apiID: String!, title: String!): RecipeData
         deleteRecipes(val: String): RecipeData
     }
 

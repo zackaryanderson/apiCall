@@ -3,15 +3,15 @@ const mongoose = require('mongoose');
 
 const recipeDataSchema = new Schema({
 
-    recipeId: {
+    apiID: {
         type: String
     },
-    recipeTitle: {
+    title: {
         type: String
     },
-    searchDate: {
+    createdAt: {
         type: Date,
-        detault: Date.now
+        default: Date.now
     }
 },
 {
