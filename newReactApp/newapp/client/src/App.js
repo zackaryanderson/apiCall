@@ -1,6 +1,10 @@
 //import dependencies
 import React from "react";
+<<<<<<< HEAD
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+=======
+//import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+>>>>>>> 6c21e0d7abd934f85f7c749e552760bbd46c5dbf
 //import { ApolloProvider } from '@apollo/react-hooks';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import './App.css';

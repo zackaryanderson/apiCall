@@ -15,11 +15,17 @@
     "apollo-server-express": "^3.10.0",
     "graphql": "^15.8.0",
     "graphql-tag": "^2.12.6",
+<<<<<<< HEAD
     "jest-watch-typeahead": "^2.0.0",
     "mongoose": "^6.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0",
+=======
+    "mongoose": "^6.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+>>>>>>> 6c21e0d7abd934f85f7c749e552760bbd46c5dbf
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

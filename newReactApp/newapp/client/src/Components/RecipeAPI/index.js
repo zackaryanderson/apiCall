@@ -1,7 +1,10 @@
 import React from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_RECIPE } from '../../utils/mutations';
+<<<<<<< HEAD
 import { Redirect } from 'react-router-dom';
+=======
+>>>>>>> 6c21e0d7abd934f85f7c749e552760bbd46c5dbf
 
 function RecipeCall() {
 
@@ -23,6 +26,11 @@ function RecipeCall() {
 
     function dataCapture (data) {
 
+<<<<<<< HEAD
+=======
+        console.log(data.recipes[1].id);
+
+>>>>>>> 6c21e0d7abd934f85f7c749e552760bbd46c5dbf
         //store data from API nested in data variable
         for (let i = 0; i < data.recipes.length; i++) {
 
@@ -43,8 +51,12 @@ function RecipeCall() {
                     if (error) {
                         throw new Error('something went wrong');
                     };
+<<<<<<< HEAD
                     //console.log(mutationResponse);
                     console.log("Recipe Saved");
+=======
+                    console.log(mutationResponse);
+>>>>>>> 6c21e0d7abd934f85f7c749e552760bbd46c5dbf
                 } catch (e) {
                     console.log(e)
                 }
