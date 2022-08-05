@@ -27,21 +27,9 @@ function Nav() {
             <nav>
                 <ul className="flex-row">
 
-                    <li classname="mx-2">
-                        <a href="#generate">
-                            Generate
-                        </a>
-                    </li>
-
-                    <li classname="mx-2">
-                        <a href="#previous">
-                            Previous
-                        </a>
-                    </li>
-
                     {/*Mapping in a handful of categories.*/}
                     {categories.map((category) => (
-                        <li classname = "mx-1" key = { category.name } >
+                        <li className = "mx-1" key = { category.name } >
                             <a href={`#${category.name}`} onClick={() => categorySelected(category.name)} >
                                 {category.name}
                             </a>
