@@ -27,8 +27,6 @@ function Nav() {
             <nav>
                 <ul className="flex-row">
 
-<<<<<<< HEAD
-=======
                     <li className="mx-2">
                         <a href="#generate">
                             Generate
@@ -41,7 +39,6 @@ function Nav() {
                         </a>
                     </li>
 
->>>>>>> 6c21e0d7abd934f85f7c749e552760bbd46c5dbf
                     {/*Mapping in a handful of categories.*/}
                     {categories.map((category) => (
                         <li className = "mx-1" key = { category.name } >

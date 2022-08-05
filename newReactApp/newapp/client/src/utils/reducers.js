@@ -18,7 +18,7 @@ export const reducer = (state, action) => {
         case UPDATE_CURRENT_RECIPE: 
         return {
             ...state,
-            currentRecipe: [...action.currentRecipe],
+            currentRecipe: {...action.currentRecipe},
         };
 
         default: 

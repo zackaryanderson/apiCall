@@ -11,7 +11,6 @@ function PreviousRecipes () {
     const { loading, data } = useQuery(QUERY_RECIPES);
 
     const recipes = data?.recipes || [];
-    console.log(recipes);
 
     return (
         <div className="flex justify-center">

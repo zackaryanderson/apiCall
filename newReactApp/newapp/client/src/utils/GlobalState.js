@@ -9,7 +9,7 @@ const StoreProvider = ({ value = [], ...props }) => {
 
     const [state, dispatch] = useRecipeReducer({
         recipes: [],
-        currentRecipe: [],
+        currentRecipe: {},
     });
 
     //console log for sanity check
